@@ -1,0 +1,63 @@
+{
+    "id": "backstop_default",
+    "viewports": [{
+        "label": "desktop",
+        "width": 2880,
+        "height": 1800
+    }],
+    "onBeforeScript": "puppet/loadCookies.js",
+    "onReadyScript": "",
+    "scenarios": [{
+        "label": "https://github.com/Redeagle48/OutSystemsNews",
+        "cookiePath": "backstop_data/engine_scripts/github_cookies.json",
+        "url": "https://github.com/Redeagle48/OutSystemsNews",
+        "referenceUrl": "",
+        "readyEvent": "",
+        "readySelector": "",
+        "delay": 2000,
+        "hideSelectors": [],
+        "removeSelectors": [],
+        "hoverSelector": "",
+        "clickSelector": "",
+        "postInteractionWait": 0,
+        "selectors": [],
+        "selectorExpansion": true,
+        "expect": 0,
+        "misMatchThreshold": 0.1,
+        "requireSameDimensions": true
+    }, {
+        "label": "https://github.com/Redeagle48/YAMA",
+        "cookiePath": "backstop_data/engine_scripts/github_cookies.json",
+        "url": "https://github.com/Redeagle48/YAMA",
+        "referenceUrl": "",
+        "readyEvent": "",
+        "readySelector": "",
+        "delay": 2000,
+        "hideSelectors": [],
+        "removeSelectors": [],
+        "hoverSelector": "",
+        "clickSelector": "",
+        "postInteractionWait": 0,
+        "selectors": [],
+        "selectorExpansion": true,
+        "expect": 0,
+        "misMatchThreshold": 0.1,
+        "requireSameDimensions": true
+    }],
+    "paths": {
+        "bitmaps_reference": "backstop_data/bitmaps_reference",
+        "bitmaps_test": "backstop_data/bitmaps_test",
+        "engine_scripts": "backstop_data/engine_scripts",
+        "html_report": "backstop_data/html_report",
+        "ci_report": "backstop_data/ci_report"
+    },
+    "report": ["browser"],
+    "engine": "puppeteer",
+    "engineOptions": {
+        "args": ["--no-sandbox"]
+    },
+    "asyncCaptureLimit": 5,
+    "asyncCompareLimit": 50,
+    "debug": false,
+    "debugWindow": false
+}
